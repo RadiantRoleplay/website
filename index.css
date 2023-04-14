@@ -15,7 +15,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    background-color: whitesmoke;
+    background-color: rgb(73, 73, 73);
 }
 
 #header-container {
@@ -104,6 +104,11 @@ a img {
 
 #container {
     margin-top: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     transition: margin-top 0.5s ease;
 }
 
@@ -172,17 +177,29 @@ a img {
 
 .background-element {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 150px 0;
+    background-color: rgb(59, 59, 59);
+    width: calc(100% - 40px);
+    height: 300px;
+    border-radius: 20px;
 }
 
 .background-element div {
-    font-weight: bold;
-    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.background-element p {
+.background-element div h3 {
+    font-weight: bold;
+    font-size: 30px;
+    color: white;
+}
+
+.background-element div p {
     font-size: 20px;
+    color: white;
 }
